@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+table, ul {
+    font-size: 1.25rem;
+}
+header {
+    background: linear-gradient(to right, deeppink, rebeccapurple, cyan);
+    color: white;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+p {
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+#utslogo1 {
+    height: auto;
+    align-items: center;
+    position: relative;
+    width: 50vw;
+    max-width: 160px;
+    min-width: 40px;
+    margin-left: 2%;
+    object-position: bottom;
+}
+header h1 {
+    width: 40vw;
+    max-width: 400px;
+    min-width: 20px;
+    font-family: Rajdhani;
+    font-size: 205%;
+    justify-content: center;
+}
+nav {
+    top: 0;               
+    z-index: 1000;       
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+nav li {
+    display: inline;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-style: solid;
+    border-width: 4px;
+    border-color:#202036;
+    background-color: #3c3c3c;
+    border-radius: 50px;
+    font-family: Rajdhani;
+    font-size: 1.35rem;
+}
+.currentbutton {
+    background-color: blueviolet;
+}
+a:hover {
+    background-color: blueviolet;
+    color: white;
+    border-color: bisque;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+h2 {
+    color:gold;
+    font-size: 1.65rem;
+}
+h3 {
+    font-size: 1.4rem;
+}
+.homecontent {
+    background-color:#202036;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    flex-direction: row;
+}
+#portrait {
+    position: relative;
+    top: 17px;
+    margin: 1px;
+    height: auto;
+    width: 15%;
+    max-width: 200px;
+    border-radius: 1em;
+    flex-shrink: 0;
+}
+.textcontainer {
+    color: white;
+    padding-left: 0px;
+    font-family: Roboto;
+}
+.textcontainer1 {
+    color: white;
+    font-family: Roboto;
+    padding-top: 25px;
+}
+#webicon {
+    height: auto;
+    width: 22%;
+    position: relative;
+    top: 15px;
+    flex-shrink: 0;
+}
+.para {
+    max-width: 900px;       
+    margin: 0;         
+    text-align: justify;
+    padding-right: 1px;
+    padding-top: 0.1em;                    
+}
+.nextgap{
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-start;
+    padding-top: 12px;
+    background: none;
+}
+.nextprevious {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding-top: 12px;
+    background: none;
+}
+.next {
+    position: relative;
+    left: 80px;
+    bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color:blue;
+    margin-right: 0px;
+    color: white;
+    font-size: 140%;
+    font-family: Rajdhani;   
+}
+.previous {
+    position: relative;
+    right: 80px;
+    bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color:blue;
+    margin-right: 0px;
+    color: white;
+    font-size: 140%;
+    font-family: Rajdhani;
+}
+#footer1 {
+    text-align: center;
+    padding: 0 1px;
+    display: block;
+}
+footer {
+    background: linear-gradient(to right, #660000, #000066);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    color: #e0e0e0;
+    text-align: center;
+    height: 10em;
+}
+.footerimg {
+    display: flex;
+    justify-content: center;   
+    gap: 5px;
+    padding-top: 0.5em;
+}
+.footerimg img {
+    width: auto;
+    height: 40px;
+}
+.logo{
+    display: flex;
+}
+table, td, tr {
+    border: solid;
+    border-color: aqua;
+    color: white;
+    padding: 15px 15px;
+    border-collapse: collapse;
+}
+th {
+    padding: 20px;
+    background-color: #003366;
+    color: #ffffff;
+}
+table {
+    position: relative;
+    bottom: 25px;
+    margin: 30px;
+    margin-left: 10px;
+}
+#achieve {
+    position: relative;
+    bottom: 25px;
+    margin: 30px;
+    margin-left: 25px;
+}
+#footballimg {
+    position: relative;
+    top: 20px;
+    margin: 1px;
+    height: auto;
+    width: 20%;
+    max-width: 200px;
+    border-radius: 1em;
+    flex-shrink: 0;
+}
+.diagramcontainer {
+    padding: 20px;
+    padding-left: 20px;
+    width: 100%;
+}
+.diagramimg {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin: 10px;
+    height: auto;
+    width: 91.5%;
+    max-width: 900px;
+    max-height: 500px;
+}
+#bold {
+    font-weight: bold;
+}
+#joblist {
+    padding: 15px;
+    padding-left: 50px;
+}
+#joblist li {
+    line-height: 1.8;
+}
+ul li {
+    margin-bottom: 10px;
+    list-style-type: circle;
+    line-height: 1.4;
+}
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    max-width: 1100px;
+    align-items: center;
+    padding-left: 2%;
+}
+.gridcontainer img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.indent {
+    padding-left: 20px;
+}
+#filesystem {
+    width: 99%;
+    height: auto;
+}
+.note {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#picstructure {
+    width: 40%;
+    height: auto;
+    max-width: 200px;
+    flex-shrink: 0;
+}
+.list1 {
+    padding: 20px;
+    line-height: 1.5;
+}
+#palette {
+    width: 100%;
+    height: auto;
+}
+#phoneweb {
+    width: 18%;
+    height: 31%;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: #e0e0e0;
+    position: relative;
+    bottom: 10px;
+    flex-shrink: 0;
+}
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 50px;
+}

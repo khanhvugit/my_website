@@ -1,0 +1,323 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Comments Page</title>
+        <link rel="stylesheet" href="websystems.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img id="utslogo1" src="images/utslogo1.png" alt="UTS Logo">            
+            <h1>My Comments<br>
+                -31268-
+            </h1>                       
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="past.html">My Past</a></li>
+                    <li><a href="future.html">My Future</a></li>
+                    <li><a class="currentbutton" href="comments.html">Comments</a></li>
+                </ul>
+            </nav>           
+        </header>
+        <div class="homecontent">
+            <div class="textcontainer">
+                <h2>I. The overall structure of the website</h2><br><br>
+                <div class="indent">
+                    <h3>1. A short description of website</h3><br>
+                    <p>This website tells the story of my journey in computing. It is made up of four pages that share a little about me and my experiences, supported by a stylesheet to improve the look and feel, and images to make the stories more engaging. Here is a diagram that shows how my website is structured:</p><br>
+                    <img id="filesystem" title="An illustation of the structure of my website" src="images/filesystempic.png" alt="My Filesystem"><br><br><br>
+                    <h3>2. More details about my website</h3><br>
+                    <p>The table below gives a clearer overview of my website and explains the purpose of each page:</p><br>
+                    <table>
+                        <tr>
+                            <th>Page Title</th>
+                            <th>File Name</th>
+                            <th>Main Content</th>
+                            <th>Purpose</th>
+                        </tr>
+                        <tr>
+                            <td>Home Page</td>
+                            <td>index.html</td>
+                            <td>Welcome text and a short intro of myself</td>
+                            <td>Give reader a little information about me</td>
+                        </tr>
+                        <tr>
+                            <td>My Past</td>
+                            <td>past.html</td>
+                            <td>Some stories from my life and early experiences with computing</td>
+                            <td>Share my past experience and inspire readers</td>
+                        </tr>
+                        <tr>
+                            <td>My Future</td>
+                            <td>future.html</td>
+                            <td>My plans and aspirations</td>
+                            <td>Outline my goals and my aspiration to contribute</td>
+                        </tr>
+                        <tr>
+                            <td>My Comments</td>
+                            <td>comments.html</td>
+                            <td>Details and Structure of my website</td>
+                            <td>Help the readers understand the structure and purposes of different webpage</td>
+                        </tr>
+                    </table>
+                    <div class="note">
+                        <p class="note">NOTE: Each page has a navigation bar to every other page. The page also has the "Previous" and "Next" button to navigate to the previous and next page respectively.</p><br><br>
+                    </div>
+                </div>
+                <h2>II. The internal structure of each web page</h2><br><br>
+                <div class="indent">
+                    <h3>1. Head</h3><br>
+                    <ul class="indent">
+                        <li>The head section contains machine-readable information about the document, like the title, scripts, and style sheets.</li>
+                        <li>It also includes a link to the external stylesheet (websystems.css) and a link to Google Fonts, allowing me to use custom fonts across the site for a more polished appearance.</li><br><br>
+                    </ul>
+                    <h3>2. Body</h3><br>
+                    <div class="container">
+                        <div class="textcontainer">
+                            <p>The body contains the visible parts for the readers, which are Header, Navigation Menu, Content and Footer</p>
+                            <ul class="list1">
+                                <li>Header: The top section of the page, which contains the navigation bar.</li>
+                                <li>Navigation Menu: Located inside the Header, which helps reader to navigate between pages.</li>
+                                <li>Content: The main area of the page where the primary information is presented.</li>
+                                <li>Footer: Provides supplementary information.</li>
+                            </ul>
+                            <p>The photo on the right illustrates the body structure of my web pages. At the top is the header, which contains the UTS logo on the left corner, the page title in the center, and a navigation bar on the right that allows users to move between different pages. Below the header is the content section, which holds the main information and purpose of each webpage. The bottom section is the footer, which in this case is used to indicate that these web pages were created for the subject Web Systems at the University of Technology Sydney.</p>
+                        </div>
+                        <img id="picstructure" title="The layout of each page" src="images/internalstructure.png" alt="Picture of my web pages' body structure">
+                    </div>
+                </div>
+                <h2>III. Description of styles</h2><br><br>
+                <div class="indent">
+                    <p>The table below describes the CSS styles used for the web pages:</p><br>
+                    <table>
+                        <tr>
+                            <th>Selector</th>
+                            <th>Type</th>
+                            <th>Purpose</th>
+                            <th>Page</th>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Universal selector</td>
+                            <td>Target all elements on the page, remove the default outer and inner spacing</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>body</td>
+                            <td>Element selector</td>
+                            <td>Ensure the body covers the entire screen</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>header</td>
+                            <td>Element selector</td>
+                            <td>Style the header section with a gradient background, white text, fixed height, and a flexbox layout so its content is spaced evenly and centered</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>p</td>
+                            <td>Element selector</td>
+                            <td>Set the line height and font size</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>header h1</td>
+                            <td>Descendant selector</td>
+                            <td>Style the h1 inside the header by giving it a responsive width (clamp), setting font, size and the position of its content</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>nav</td>
+                            <td>Element selector</td>
+                            <td>Keep the navigation bar positioned at the top of the page</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>nav ul</td>
+                            <td>Descendant selector</td>
+                            <td>Remove default list styling, use flexbox to align list items to the right with spacing, and allow wrapping for responsiveness</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>nav li a</td>
+                            <td>Descendant selector</td>
+                            <td>Style the navigation links to look like button with white text, no underline, padding, rounded borders, background color, and a clean readable font</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>.currentbutton</td>
+                            <td>Class selector</td>
+                            <td>Highlight the button of the page the user is reading</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>a:hover</td>
+                            <td>Pseudo-class selector</td>
+                            <td>Change the appearance of links on hover, giving them a new background, text color, and border color</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>h1, h2, h3</td>
+                            <td>Element selector</td>
+                            <td>Adjust the size and color of some headings to make they look comfortable</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>.homecontent</td>
+                            <td>Class selector</td>
+                            <td>Style the main content area with a dark background, full viewport height, and balanced padding on all sides for spacing</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>.container</td>
+                            <td>Class selector</td>
+                            <td>Create a flexbox container where items (images and text container) are spaced evenly, aligned centrally, with gaps and bottom margin</td>
+                            <td>Home, Past, Comments</td>
+                        </tr>
+                        <tr>
+                            <td>.container1</td>
+                            <td>Class selector</td>
+                            <td>Create a flexbox container where items (images and text container) are spaced evenly, aligned centrally, with bigger gaps</td>
+                            <td>Comments</td>
+                        </tr>
+                        <tr>
+                            <td>.textcontainer, .textcontainer1</td>
+                            <td>Class selector</td>
+                            <td>Style textbox with color, font and padding</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>#utslogo, #portrait, #webicon, #footballimg, etc</td>
+                            <td>Id selector</td>
+                            <td>Style the images</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>.nextprevious</td>
+                            <td>Class selector</td>
+                            <td>Create a flex container for navigation buttons, aligning them to opposite sides with spacing at the top and no background</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>table, td, tr</td>
+                            <td>Grouping selector</td>
+                            <td>Style tables and their cells with aqua-colored borders, white text, padding, and collapsed borders for a clean look</td>
+                            <td>Past, Comments</td>
+                        </tr>
+                        <tr>
+                            <td>.gridcontainer</td>
+                            <td>Class selector</td>
+                            <td>Create a CSS grid layout with 2 columns and 2 rows, fixed sizes, gaps between items, and a maximum width</td>
+                            <td>Future</td>
+                        </tr>
+                        <tr>
+                            <td>.note</td>
+                            <td>Class selector</td>
+                            <td>Highlight important notes by making the text red, bold, and larger</td>
+                            <td>Comments</td>
+                        </tr>
+                        <tr>
+                            <td>footer</td>
+                            <td>Element selector</td>
+                            <td>Style the footer with a horizontal gradient background, padding for spacing, centered light text, and fixed height</td>
+                            <td>All pages</td>
+                        </tr>
+                    </table>
+                    <p>Description of the internal structure of my CSS file: I use CSS to control both the global layout and individual elements in my web pages. The CSS file uses a mix of universal selector, element selectors, class selectors, Id selectors, descendant selectors, grouping selectors and a pseudo-class selector.</p>
+                </div><br><br>
+                <h2>IV. Graphic Design (Aesthetics)</h2><br><br>
+                <div class="indent">
+                    <h3>1. Overall layout</h3><br>
+                    <p>In this website, I use a combination of flexbox (.textcontainer, .nextprevious) and grid (.gridcontainer) to create a structured layout:</p><br>
+                    <div class="indent">
+                        <ul>
+                            <li>Flexbox: flexbox is used to align the elements horizontally, which makes the navigation menu, header and footer evenly spaced and adapt well with different screen size.</li>
+                            <li>Grid: grid is used to create 2x2 layout for my photos.</li>
+                        </ul><br>
+                    </div>
+                    <p>Overall, using the combination of flexbox and grid creates a clean, balanced and responsive layout that makes the website easy to navigate and visually engaging.</p><br><br>
+                    <h3>2. Colors</h3><br>
+                    <p>These are the colors I used for this website:</p>
+                    <img id="palette" src="images/colorpalette.png" title="My color" alt="This is the color palette for my website">
+                    <div class="indent">
+                        <ul>
+                            <li>Background: I want the background to have a dark shade so it looks mysterious and highlights the contrast.</li>
+                            <li>Interactive elements: Buttons use Blueviolet to highlight active.</li>
+                            <li>Text: I choose the white color for texts and gold for headings to make them readable against the dark background.</li>
+                            <li>Header and footer: They both have gradient background (deeppink, rebeccapurple, cyan for the header; dark red and navy for the footer) to add the vibrancy and make the page dynamic and modern.</li>
+                        </ul><br><br>
+                    </div>
+                    <h3>3. Fonts</h3><br>
+                    <p>I have chosen Rajdhani and Roboto fonts for this website.</p><br>
+                    <div class="indent">
+                        <ul>
+                            <li>Rajdhani: Used for the navigation menu and the heading 1 to make the web pages look "tech" and mysterious.</li>
+                            <li>Roboto: Used for the texts to make them clear and easy to read.</li>
+                        </ul><br>
+                    </div>
+                    <p>The pairing of Rajdhani and Roboto creates a clear hierarchy: Rajdhani for standout titles/menus and Roboto for smooth reading in paragraphs.</p><br><br>
+                    <h3>4. Additional features</h3><br>
+                    <div class="indent">
+                        <ul>
+                            <li>Border of buttons: Rounded corners make soften the design of the page.</li>
+                            <li>Responsive width: Using clamp makes the photo sizable depending on the screen size of the user.</li>
+                            <li>Tables: I use the aqua color to make it outstanding.</li>
+                        </ul><br><br>
+                    </div>
+                    <h3>5. Why I chose this Aesthetics</h3><br>
+                    <p>I chose this style because I like a design that feels organized yet mysterious, which is why I used a dark colour palette as the base. The deep tones create intrigue, while bright accents and hover effects highlight key elements. Using flexbox and grid keeps everything structured and neat, reflecting my preference for clarity within a dark, elegant theme.</p><br><br>
+                </div>
+                <h2>V. Accessibility</h2><br><br>
+                <div class="indent">
+                    <h3>1. The &lt;alt&gt; tag</h3><br>
+                    <p>The &lt;alt&gt; tag is used to show the content of images in my website. Also, with the &lt;alt&gt; tag, screen reader can describe the images to visually impaired users. Moreover, search engines also use the &lt;alt&gt; tag to improve the website's discoverability. All meaningful images have a descriptive &lt;alt&gt; tag. When users hover mouse over the images, the image title will appear.</p><br><br>
+                    <h3>2. Font choices</h3><br>
+                    <p>Body text uses Roboto at comfortable sizes and line height on a dark background. I chose Roboto because it is a modern, san-serif font that is readerable for digital screens. Its clean lines and balanced letterforms make it easy to read at both small and large sizes, which supports accessibility for all users. The font size is set large enough so that text remains readable even from a distance of about one metre. Color choices meet contrast needs. Important information is not conveyed only by color, but also borders.</p><br><br>
+                    <h3>3. User-friendly Design for the Disabled</h3><br>
+                    <p>My website is designed to be user-friendly for disabled users by following several accessibility practices. It includes the &quot;lang&quot; and the &lt;meta charset=&quot;UTF-8&quot;&gt; declaration to support disabled users by improving how assistive technologies interpret the website. The &quot;lang&quot; attribute allows screen readers to use the correct pronunciation and voice settings, ensuring that blind or low-vision users can clearly understand the content. Meanwhile, the UTF-8 character encoding prevents text from breaking or displaying incorrectly, which helps users with cognitive or reading difficulties follow the content without confusion. The color scheme of my website is also friendly for color-blind users. I avoid relying on red and green contrasts, which are difficult for many users to distinguish, and instead use high-contrast combinations such as blueviolet, cyan, white and gold for the elements, which ensures that people with color-vision deficiencies can still use the website.</p><br><br>
+                    <h3>4. How the site works when CSS is off</h3><br>
+                    <p>When CSS is turned off, the web pages fall back to the HTML structure:</p><br>
+                    <div class="indent">
+                        <ul>
+                            <li>Layout: The flexbox and the grid will disappear, which makes all the elements the page vertically stacked.</li>
+                            <li>Navigation: The navigation menu will not look like buttons, they are only links instead.</li>
+                            <li>Colors and Background: All the colors in the stylesheet disappear, leaving the pages with default HTML color of white background and black text.</li>
+                            <li>Fonts: Custom fonts will be removed and reverted to the default font of Times New Roman.</li>
+                            <li>Table: The tables will lose the border color.</li>
+                        </ul><br>
+                    </div>
+                    <p>Without the CSS file, the website remains functional because the semantic HTML ensures that the structure is preserved.</p><br><br>
+                    <h3>5. Tabindex</h3><br>
+                    <p>The site also supports keyboard navigation by making use of the tabindex attribute. For that reason, users who cannot use mouse can use the tab key to move between the links in the navigation menu and click enter to move to that page. The tab order highlights the focused element, making it clear which link is selected. This feature allows users who do not use mouse to access the website.</p><br><br>
+                    <h3>6. Responsiveness on Phone</h3><br>
+                    <div class="container1">
+                        <div class="textcontainer">
+                            <p>The website is designed to be responsive so that users can view it comfortably on both desktop computers and mobile phones. The layout uses flexible CSS grid and flexbox properties that adjust the size and arrangement of elements depending on the screen width. When viewed on a mobile phone, the layout adjusts automatically: the title remains fixed at the top right to highlight the current page, while the navigation bar wraps down onto the next line. This makes the design easier to use on smaller screens, ensuring that the navigation buttons remain visible without overlapping the title. By allowing the elements to wrap and reposition themselves, the site provides a layout that feels organized and user-friendly on mobile phone screen.</p>
+                        </div>
+                        <img id="phoneweb" src="images/phonepic.jpg" title="My website viewed on mobile phone" alt="My website viewed on mobile phone">
+                    </div>
+                    <h3>7. Next/Previous Navigation</h3><br>
+                    <p>Each page of the website includes Next and Previous buttons at the bottom. These buttons give users a clear and consistent way to move through the site in sequence, without always needing to return to the navigation bar. These buttons can also be used by the Tab key. Moreover, those Next/Previous buttons also support a linear reading path, which is extremely useful for the website. These buttons also use the Roboto font to look synchronized with the navigation menu.</p><br><br>
+                </div><br><br>
+                <div class="nextprevious">
+                    <span><a class="previous" href="future.html">Previous</a></span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="footer1">
+                <p>&copy; 2025 Nam Khanh Vu</p>
+                <p>31268 Web Systems</p>
+                <p>University of Technology, Sydney</p>
+
+            </div>
+            <div class="footerimg">
+                <img src="images/html1.png" alt="HTML logo">
+                <img src="images/css1.png" alt="CSS logo">
+            </div>    
+        </footer>
+    </body>
+</html>
